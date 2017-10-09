@@ -1,0 +1,9 @@
+start
+    declarations
+        int AIY = 5 //age in year
+        int DPW = 5 //days per week
+        int RATES[AIY][DPW] = {30, 60, 88, 115, 140},
+                              {26, 52, 70, 96, 120},
+                              {24, 46, 67, 89, 110},
+                              {22, 40, 60, 75, 88},
+                              {20, 35, 50, 66, 84}
