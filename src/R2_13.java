@@ -12,7 +12,7 @@ import java.util.Scanner;
  * Then extract substrings consisting of the first n – 4 characters and the last three characters.
  */
 
-public class P2_13 {
+public class R2_13 {
 
 	public static void main(String[] args) {
 		
