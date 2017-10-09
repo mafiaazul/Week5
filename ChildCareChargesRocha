@@ -7,3 +7,50 @@ start
                               {24, 46, 67, 89, 110},
                               {22, 40, 60, 75, 88},
                               {20, 35, 50, 66, 84}
+        int ageInYears = 0;
+        int daysPerWeek = 0;
+        final int SENTINEL = 999;
+        int foundIt = 0;
+        int rowLocation = 0;
+        int columnLocation = 0;
+
+        Ouput "Please enter number of days per week: "
+        Input daysPerWeek
+        Output "Please enter child's age or 999 to QUIT: "
+        Input ageInYears
+
+        while (ageInYears != SENTINEL)
+            for (int age = 0; age < AIY; age++)
+                if (age == ageInYears)
+                    rowLocation = age;
+                    foundIt = foundIt + 1
+                    break
+                endif
+            endfor
+            for (int days = 0; days < DPW; days++)
+                if (days == daysPerWeek)
+                    columnLocation = days
+                    foundIt = foundIt + 1
+                    break
+                endif
+            endfor
+            if (foundIt == 2)
+                Output "Based on age and number of weeks, your cost is: $" + RATES[rowLocation][columnLocation] + ".00"
+                Ouput "Please enter number of days per week: "
+                Input daysPerWeek
+                Output "Please enter child's age or 999 to QUIT: "
+                Input ageInYears
+                if (ageInYears == SENTINEL)
+                    break
+            else
+                Output "Age/Days valid values are from 0 -> 5"
+                Ouput "Please enter number of days per week: "
+                Input daysPerWeek
+                Output "Please enter child's age of 999 to QUIT: "
+                Input ageInYears
+                if (ageInYears == SENTINEL)
+                    break
+                endif
+            endif
+        endwhile
+stop
