@@ -18,7 +18,6 @@ public class CompareNames {
 			System.out.print("Names are different!");
 		
 		in.close();
-
 	}
 
 }
