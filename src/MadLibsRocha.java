@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 public class MadLibsRocha {
 
 =======
+=======
+>>>>>>> 4a2a0c5241a8000c36cb38a8bd471054178c9499
 import java.util.Scanner;
 
 public class MadLibsRocha {
@@ -51,5 +54,8 @@ public class MadLibsRocha {
 		in.close();
 	}
 
+<<<<<<< HEAD
+>>>>>>> 4a2a0c5241a8000c36cb38a8bd471054178c9499
+=======
 >>>>>>> 4a2a0c5241a8000c36cb38a8bd471054178c9499
 }
