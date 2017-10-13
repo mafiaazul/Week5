@@ -12,24 +12,28 @@ start
         final int SENTINEL = 999
         boolean quit = false
 
-        while (!quit)
+        do
             Output "Please enter child's age (between 0 and 4) or 999 to QUIT: "
             Input ageInYears
             if (ageInYears == SENTINEL)
-                Output "You decided to quit!"
                 quit = true
             else
-                while (ageInYears < 0 OR ageInYears > 4)
-                    Output "Please enter a valid age between 0 and 4: "
-                    Input ageInYears
-                endwhile
+                if (ageInYears < 0 OR ageInYears > 4))
+                    while (ageInYears < 0 OR ageInYears > 4)
+                        Output "Please enter a valid age between 0 and 4: "
+                        Input ageInYears
+                    endwhile
+                endif
                 Output "Please enter days per week: "
                 Input daysPerWeek
-                while (daysPerWeek < 1 OR daysPerWeek > 5)
-                    Output "Please enter a valid number between 1 and 5"
-                    Input daysPerWeek
-                endwhile
+                if (daysPerWeek < 1 OR daysPerWeek > 5)
+                    while (daysPerWeek < 1 OR daysPerWeek > 5)
+                        Output "Please enter a valid number between 1 and 5"
+                        Input daysPerWeek
+                    endwhile
+                endif
                 Output "Your weekly cost is: $" + RATES[ageInYears][daysPerWeek - 1] + ".00"
             endif
-        endwhile
+        while (!quit)
+
 stop
